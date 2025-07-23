@@ -14,6 +14,17 @@
       src="https://kit.fontawesome.com/d672988515.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!--full page-->
@@ -28,11 +39,23 @@
             <div class="menu">
               <ul class="flex">
                 <li class="p-2"><a href="#">Home</a></li>
-                <li class="p-2"><a href="#">Service</a></li>
+                <li class="p-2">
+                  <a href="#"
+                    >Service <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </li>
 
-                <li class="p-2"><a href="#">Cases</a></li>
-                <li class="p-2"><a href="#">Blog</a></li>
-                <li class="p-2"><a href="#">Contact Us</a></li>
+                <li class="p-2">
+                  <a href="#">Cases <i class="fa-solid fa-angle-right"></i></a>
+                </li>
+                <li class="p-2">
+                  <a href="#">Blog <i class="fa-solid fa-angle-right"></i></a>
+                </li>
+                <li class="p-2">
+                  <a href="#"
+                    >Contact Us <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </li>
               </ul>
             </div>
             <button
@@ -59,8 +82,9 @@
 
               <form action="" class="flex text-center justify-center">
                 <input
-                  class="border-amber-100 bg-stone-50 mr-3 w-100 rounded-2xl"
+                  class="border-amber-100 bg-stone-50 mr-3 w-100 rounded-2xl text-[#707070] p-3"
                   type="text"
+                  placeholder="Search Your Services"
                 />
                 <button class="rounded-2xl p-3 bg-amber-500">Search</button>
               </form>
@@ -79,15 +103,15 @@
             injected humour.
           </p>
           <div
-            class="card pl-20 pr-20 pt-10 pb-10 grid md:grid-cols-3 w-full justify-around"
+            class="card pl-30 pr-30 pt-20 pb-20 grid md:grid-cols-3 w-full justify-around"
           >
             <!--box1--box1Business law-->
-            <div class="box1 w-70 text-center border-b-1 border-gray-400 p-5">
+            <div class="box1 w-90 text-center border-b-1 border-gray-400 p-5">
               <img class="mx-auto pb-3" src="images/business.png" alt="" />
               <h1 class="font-[EB Garamond] pb-5 text-[32px] font-extrabold">
                 Business Law
               </h1>
-              <p class="pb-5 font-[Poppins] text-[#707070]">
+              <p class="pb-5 font-Poppins text-[#707070]">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour.
@@ -97,13 +121,13 @@
 
             <!--box-2-criminal law-->
             <div
-              class="box1 w-70 text-center border-b-1 border-l-1 border-r-1 border-gray-400 p-5 bg-gray-100"
+              class="box1 w-90 text-center border-b-1 border-l-1 border-r-1 border-gray-400 p-5 bg-gray-100"
             >
               <img class="mx-auto pb-3" src="images/criminal.png" alt="" />
               <h1 class="font-[EB Garamond] pb-5 text-[32px] font-extrabold">
                 criminal Law
               </h1>
-              <p class="pb-5 font-[Poppins] text-[#707070]">
+              <p class="pb-5 font-Poppins text-[#707070]">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour.
@@ -112,12 +136,12 @@
             </div>
 
             <!--box-3--child support-->
-            <div class="box1 w-70 text-center border-b-1 border-gray-400 p-5">
+            <div class="box1 w-90 text-center border-b-1 border-gray-400 p-5">
               <img class="mx-auto pb-3" src="images/child.png" alt="" />
               <h1 class="font-[EB Garamond] pb-5 text-[32px] font-extrabold">
                 Child Support
               </h1>
-              <p class="pb-5 font-[Poppins] text-[#707070]">
+              <p class="pb-5 font-Poppins text-[#707070]">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour.
@@ -126,12 +150,12 @@
             </div>
 
             <!--box4--education law-->
-            <div class="box1 w-70 text-center border-gray-400 p-5">
+            <div class="box1 w-90 text-center border-gray-400 p-5">
               <img class="mx-auto pb-3" src="images/education.png" alt="" />
               <h1 class="font-[EB Garamond] pb-5 text-[32px] font-extrabold">
                 Education Law
               </h1>
-              <p class="pb-5 font-[Poppins] text-[#707070]">
+              <p class="pb-5 font-Poppins text-[#707070]">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour.
@@ -140,13 +164,13 @@
             </div>
             <!--box5--divorce law-->
             <div
-              class="box1 w-70 text-center border-r-1 border-l-1 bg-gray-50 border-gray-400 p-5"
+              class="box1 w-90 text-center border-r-1 border-l-1 bg-gray-50 border-gray-400 p-5"
             >
               <img class="mx-auto pb-3" src="images/divorce.png" alt="" />
               <h1 class="font-[EB Garamond] pb-5 text-[32px] font-extrabold">
                 Divorce Law
               </h1>
-              <p class="pb-5 font-[Poppins] text-[#707070]">
+              <p class="pb-5 font-Poppins text-[#707070]">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour.
@@ -154,12 +178,12 @@
               <img class="mx-auto" src="images/Frame.png" alt="" />
             </div>
             <!--box6--tax law-->
-            <div class="box1 w-70 text-center border-gray-400 p-5">
+            <div class="box1 w-90 text-center border-gray-400 p-5">
               <img class="mx-auto pb-3" src="images/tax.png" alt="" />
               <h1 class="font-[EB Garamond] pb-5 text-[32px] font-extrabold">
                 Tax Law
               </h1>
-              <p class="pb-5 font-[Poppins] text-[#707070]">
+              <p class="pb-5 font-Poppins text-[#707070]">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour.
@@ -194,6 +218,14 @@
             </div>
             <h1 class="font-[24px] pt-5 font-extrabold">Awlad Hossain</h1>
             <h3 class="pb-5 font-[16px]">UIX Designer</h3>
+            <div class="flex justify-between">
+              <div>
+                <i class="fa-solid fa-angle-left text-3xl"></i>
+              </div>
+              <div>
+                <i class="fa-solid fa-angle-right text-3xl"></i>
+              </div>
+            </div>
             <p>
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin <br />literature from
@@ -201,6 +233,13 @@
               professor at Hampden-Sydney <br />College in Virginia, looked up
               one of the more obscure Latin words, consectetur.
             </p>
+            <div>
+              <div class="div text-3xl pt-5 pb-5">
+                <i class="fa-solid fa-minus text-gray-300"></i
+                ><i class="fa-solid fa-minus pl-2 pr-2"></i
+                ><i class="fa-solid fa-minus text-gray-300"></i>
+              </div>
+            </div>
           </div>
         </section>
 
